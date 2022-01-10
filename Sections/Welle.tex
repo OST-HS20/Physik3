@@ -1,0 +1,185 @@
+\section{Welle}
+Eine Welle ist eine Störung eines Gleichgewichtszustandes, die sich im Raum $x,y,z$ Koordinaten ausbreitet. Es wird\underline{ Energie transportiert, aber kein Material}. Die allgemeine Wellengleichung ist gegeben durch Amlitude $\zeta_o$, der Wellenlänge $k = \frac{2\pi}{\lambda}$ und mittels Wellengeschwindigkeit $u$ ergibt sich $\omega = k \cdot u$, $\varphi$ kann durch einsetzen bestimmt werden \kuchling{231}:
+                  
+\[
+\zeta(x, t) = \zeta_o\sin(\omega t - kx)
+\]
+
+\begin{center}
+	\includegraphics[width=0.8\columnwidth]{Images/wellen}
+\end{center}                                                 
+
+\subsection{Harmonische Welle}
+\includegraphics[width=\columnwidth]{Images/harm.welle}
+\begin{formula}
+	{k = \frac{\omega}{u} = \frac{2\pi}{\lambda} \quad \omega = 2\pi f = \frac{2\pi}{T}}
+	k & Faktor & [] \\
+	u & Lichtgeschw. & [m/s] \\
+	\lambda & Wellenlänge & [m/s] \\
+	\omega & Kreisgeschw. & [m/s] \\
+	T & Periodendauer & []
+\end{formula}   
+
+\subsection{Wellengeschwindigkeit}
+\textbf{Festkörper:}
+\begin{formulaexpanded}
+	{u_1 = \sqrt{\frac{E}{\rho}} \qquad u_2 = \sqrt{\frac{G}{\rho}} \qquad u_3 =\sqrt{\frac{F}{\rho A}} }
+	u_1 & Elastische Longitudenwelle & [m/s] \\
+	u_2 & Elastische Transversalwelle & [m/s] \\
+	u_3 & Transversalwelle auf einem Seil & [m/s] \\
+	E & Elastizitätsmodule & [] \\
+	G & Schubmodul & [] \\
+	\rho & Dichte & [] \\
+	A & Querschnitt & [m] \\
+\end{formulaexpanded}
+
+\textbf{Fluide} (nur Longitudinal):
+\begin{formulaexpanded}
+	{u_1 = \sqrt{\frac{1}{\rho\kappa}} \qquad u_2 = \sqrt{\frac{\varkappa p}{\rho}} = \sqrt{\frac{\varkappa RT}{M}} \qquad u_3 = \frac{c}{n}}
+	u_1 & Schallwelle in Fluid & [m/s] \\
+	u_2 & Schallwelle in Gasen & [m/s] \\
+	u_3 & elektromagnetische Wellen & [m/s] \\
+	\varkappa & Adiabatenexponent & [] \\
+	p & Druck & [Pa] \\
+	\kappa & Kompressibilität & [] \\
+	c & Lichtgeschwindigkeit & [m/s] \\
+	n & Brechungsindex & [] \\
+\end{formulaexpanded}                                                
+
+\noindent\textbf{Hinweis:} Die Mittlere Molmasse der Luft ist $0.02883\frac{kg}{mol}$ und Adiabatenexponent der Luft ist $1.4$ mit Gaskonstante $R=8.314$
+
+\subsection{Dopplereffekt}\kuchling{342}
+\subsubsection{Akustisch}
+Für bewegter Beobachter und bewegte Quelle:\\
+\includegraphics[width=0.4\columnwidth]{Images/dopplereffekt}
+
+\begin{formula}
+	{f_B = \frac{u + v_B\cos(\alpha_B)}{u-v_Q\cos(\alpha_Q)}f_Q}
+	x_B & Beobachter & [] \\
+	x_Q & Quelle & [] \\
+	u & Schallgeschw. & [m/s]
+\end{formula}    
+~\\ ~\\
+Für bewegter Quelle mit Winkel. Ohne Winkel $\cos(0) = 1$:\\
+\includegraphics[width=0.4\columnwidth]{Images/dopplereffekt1}
+\begin{formula}
+	{f_B = \frac{1}{1\mp\frac{v_Q}{u}\cos(\alpha_Q)}f_Q}
+	x_B & Beobachter & [] \\
+	x_Q & Quelle & [] \\
+	u & Schallgeschw. & [m/s]
+\end{formula}    
+
+
+\subsubsection{Optisch}
+Es spielt nur die relative Bewegung von Beobachter und Quelle eine Rolle\\
+\begin{formula}
+	{f_B = \frac{\sqrt{1-\beta^2}}{1-\beta\cos(\alpha)}f_Q \qquad \beta = \frac{v}{c}} 
+	x_B & Beobachter & [] \\
+	x_Q & Quelle & [] \\
+	u & Schallgeschw. & [m/s] \\
+	c & Lichtgeschw. & [m/s]
+\end{formula}    
+
+
+Siehe auch Mach'sche Kegel \kuchling{344} für Überschallgeschwindigkeit.
+\subsection{Wellenimpdanz}
+\noindent Die \textbf{Wellenimpedanz} $Z$ ist gegeben durch
+\begin{formulaexpanded}
+	{Z = \rho u = \frac{\Delta p_0}{v_0}}
+	\Delta p_0 & Druckamplitude & [] \\
+	\rho & Dichte des Mediums & [\frac{kg}{m^3}] \\
+	u & Geschw. im Medium & [\frac{m}{s}] \\
+	v_0 & Geschw.amplitude & [\frac{m}{s}]
+\end{formulaexpanded}
+
+\textbf{Schalldruck} \kuchling{349}
+\begin{formulaexpanded}
+	{\tilde{p}(x,t) = \Delta p_0\cos(\omega t - kx) \qquad \Delta p_0 = \rho u \overbrace{\omega \varepsilon_0}^{v_0} = \rho u v_0}
+	\tilde{p}& Schalldruck & [Pa] \\
+	\Delta p_0 & Druckamplitude & [] \\
+	k & Wellenlänge & [] \\
+	\rho & Dichte des Mediums & [\frac{kg}{m^3}] \\
+	u & Geschw. im Medium & [\frac{m}{s}] \\
+	\omega & Kreisfrequenz & [] \\
+	\varepsilon_0 & Schwingungsamplitude & [] \\
+	v_0 & Geschw.amplitude & [\frac{m}{s}]
+\end{formulaexpanded}
+
+\noindent\textbf{Schallschnelle} $v$ ist die Geschwindigkeit des Punktes in einer Longitudinalwelle in x-Achse.
+\begin{formula}
+	{v = v_0\cos(\omega t - kx)}
+\end{formula}\\
+
+\noindent\textbf{Schallintensität} $I$ verteilt sich gleichmässig im Raum. Dh bei einer Quelle in der Mitte einer Kugel verteilt sich die Intensität proportional zur Oberfläche.
+\begin{formula}
+	{I = \frac{1}{2}\rho v_0^2 u = \frac{\Delta p_0^2}{2Z}}
+\end{formula}\\
+
+\noindent\textbf{Hinweis:} Elektromagnetische Wellen im Vakuum haben einen Widerstand von $Z_0 = 377 \ohm$. Die Wellenimpedanz von elekt.Wellen können mit $Z = Z_0\frac{c}{n}$ berechnet werden, wobei $n$ der Brechungsindex ist.\\
+
+\noindent\textbf{Schallpegel:}
+\begin{formulaexpanded}
+	{L = 10\log_{10}\left({\frac{I}{I_0}}\right)}
+	L & Schallintensitätspegel & [dB] \\
+	I_0 = 10^{-12}& Bezugsintensität &  [W/m^2]\\	
+\end{formulaexpanded} 
+
+\subsection{Wellenüberlagerung}
+Wellen können an einem festen oder losen Ende reflektiert werden. Dabei wird bei einem festen Ende die Welle um $180^\circ$ (Destruktiv) Phasenverschoben, sonst $0^\circ$ (Konstruktive). Wenn die Wellen sich überlagern, insteht \textbf{Inteferenz}. Konstruktive Inteferenz tritt auf, wenn zwei Wellenberge sich Maximieren und so zB die Tonlautstärke verdoppeln. Bei destruktuve Inteferenz ist eine Welle um $\frac{\lambda}{2}$ verschoben und sie löschen sich aus aka Noise-Cancelling
+
+\begin{center}
+	\includegraphics[width=0.4\columnwidth]{Images/wellen_überlagern}
+\end{center}
+
+Reflexionskoeffizient:
+\begin{formula}
+	{R = \left(\frac{Z_1-Z_2}{Z_1+Z_2}\right)^2} 
+	Z = \rho \cdot u & Wellenimpendanz & \\
+	\rho & Dichte & \\
+	u & Schallgeschw. &
+\end{formula}    
+
+Transmissionskoeffizient:
+\begin{formula}
+	{T = \frac{4Z_1Z_2}{(Z_1+Z_2)^2}} 
+	Z = \rho \cdot u & Wellenimpendanz & \\
+	\rho & Dichte & \\
+	u & Schallgeschw. &
+\end{formula}  
+
+\subsection{Stehendewelle}
+Zwei Wellen die gleichzeitig in entgegengesetzter Richtung durch das gleich Medium laufen, überlagern sich zu einer stehenden Welle, wenn sie ein vielfaches der \underline{Eigenfrequenz} sind.\kuchling{233}
+\begin{formulaexpanded}
+	{f_n = n\cdot\frac{u}{2L} \qquad \lambda_n = \frac{2L}{n}} 
+	f_n & Frequenz & \\
+	n & Anz. Harmonische Freq. & \\
+	u & & \\
+	L & Länge & \\
+\end{formulaexpanded} 
+Die Anzahl der harmonischen Frequenzen $n$ kann die Anzahl der Schwingungsknoten $k = n -1$ ermittelen.
+\begin{center}
+	\includegraphics[width=0.9\columnwidth]{Images/stehendewelle}
+\end{center}
+
+\subsection{Beugung}
+An der Kante eines engen Spalts bildet sich eine \kuchling{394}
+\begin{formulaexpanded}
+	{\sin(\alpha) = \frac{\lambda}{b}n \qquad \tan(\alpha) = \frac{a}{d}} 
+	b & Spaltbreite & [] \\
+	\lambda & Wellenlänge & [] \\
+	\varphi & Beugungswinkel & [] \\
+	n & n-te Wiederholung & []	
+\end{formulaexpanded} 
+
+\begin{center}
+	\includegraphics[width=0.6\columnwidth]{Images/beugung}
+\end{center}
+
+\subsection{Nachhall}
+Wenn eine Schallquelle plötzlich verschwindet, wird ein Nachhall produziert, welcher vom Ohr wahrgenommen wird. Die Dauer des Nachhalles $T_N$ kann folgendermassen berechnet werden:
+\begin{formulaexpanded}
+	{T_N = 0.16\frac{V}{\sum_{i}\alpha_i A_i}}
+	V & Raumvolumen & [m^3] \\
+	\alpha & Absorptionsgrad & \\	
+	A & Absorbierende Fläche & m^2
+\end{formulaexpanded} 

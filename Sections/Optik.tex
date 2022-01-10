@@ -1,0 +1,96 @@
+\section{Optik}
+\subsection{Einführung}
+\begin{formula}
+	{\lambda = \frac{c}{f}}
+	\lambda & Lichtwellen Länge & [m] \\
+	c & Lichtgeschwindigkeit & [m/s] \\
+	f & Frequenz & [s^{-1}]
+\end{formula}
+
+\begin{formula}
+	{v = \frac{c}{n}}
+	v & Geschwindigkeit & [m/s] \\
+	c & Lichtgeschwindigkeit & [m/s] \\
+	n & Brechungsindex & []
+\end{formula}
+
+\begin{formula}
+	{E = h \cdot f}
+	E & Energie & [J] \\
+	h = 6.6\cdot10^{-34} & Planksch Konstante & [J/Hz , Js] \\
+	f & Frequenz & [s^{-1}]
+\end{formula}
+
+\subsection{Brechung}
+Im \textbf{Brennpunkt} ist der Punkt, indem sich alle parallele einfallende Strahlen sich treffen. An einem Hohlspiegel gilt \kuchling{362}:
+\begin{formula}
+	{f = \frac{r}{2}}
+	f & Brennpunkt & [m] \\
+	r & Radius & [m] \\
+\end{formula}
+
+\noindent\textbf{Snellius} \kuchling{365} sagt, wie der Brechungsindex zweier Medien ist. Für den Grenzfall muss $\varepsilon_1 = 90°$ gesetzt werden, dafür erhält man $\varepsilon_g = \arcsin\left(\frac{n_1}{n_2}\right)$. Diesen kann verwendet werden, um zu entscheiden ob eine \textbf{Totalreflexion} herrscht.
+
+\begin{formulaexpanded}
+	{\frac{\sin\varepsilon_1}{\sin\varepsilon_2} = \frac{n_2}{n_1} \qquad n = \frac{c}{u}}
+	\varepsilon_{1,2} & Brechungsindex & [-] \\
+	n_{1,2} & Brechungsindex von Material & [] \\
+	c & Lichtgeschwindigkeit & [m/s] \\
+	u & Geschwindigkeit & [m/s]
+\end{formulaexpanded}
+
+\noindent Im allgemeinen ist der Brechungsindex eines Mediums eine Funktion der Wellenlänge $\lambda$. Diese Abhängikeit wird als \textbf{Dispersion} bezeichnet.
+
+\subsection{Linsen}
+Bei Konvexlinsen (Links in der Abbildung) ist der Brennpunkt rechts von der Linse (positiv). Bei Konkavlinsen ist der Brennpunkt links von der Linse (negativ)
+\begin{center}
+	\includegraphics[width=0.8\columnwidth]{Images/linsen}
+\end{center}
+
+\subsection{Abbildungen}
+Die Lage und Grösse eiens erzeugten Bildes kann mit Hilfe des Abbildungsgesetz berechnet werden. \kuchling{373}
+\begin{center}
+	\includegraphics[width=0.9\columnwidth]{Images/abbildungen}
+\end{center}
+\noindent\begin{formula}
+	{\frac{1}{g} + \frac{1}{b} = \frac{1}{f} \xRightarrow[]{} b = \frac{fg}{g-f}}
+	g & Strecke bis Linse & \\
+	b & Strecke bis Objekt & \\
+	f & Brennweite der Linse & \\
+\end{formula}
+\noindent\begin{formula}
+	{\beta_x = \frac{B}{G} = \frac{b}{g} \qquad \beta = \prod\beta_x}
+	\beta_x & Massstab einer Linse & [-] \\
+	\beta & Massstab des Systems & [-]
+\end{formula}
+
+\noindent\textbf{Vorzeichenkonvention für Linsenabbildungen}\\
+\begin{tabular}{lll}
+	\midrule
+	g & + & Falls sich der Gegenstand vor der Linse befindet \\
+	g & - & Falls sich der Gegenstand hinter der Linse befindet \\ \midrule
+	G & + & Reeller Gegenstand \\
+	G & - & Virtueller Gegenstand, seitenverkehrt! \\ \midrule
+	f & + & Sammellinse \\
+	f & - & Zerstreuungslinse \\ \midrule
+	b & + & reelles Bild hinter der Linse \\
+	b & - & virtuelles Bild vor der Linse \\ \midrule
+	B & + & Reeles Bild, seitenverkehrt! \\
+	B & - & virtuelles Bild, aufrecht und seitenverkehrt \\
+	\midrule
+\end{tabular}
+
+
+\subsection{Vergrösserung Lupe}
+Die Vergrösserung $V$ durch eine Lupe wird durch die Bezugsseheweite $s = 25cm$ und Brennweite der Lupe $f$ definiert \kuchling{381}.
+\begin{formula}
+	{V = \frac{s}{f}}
+	s & Strecke & \\
+	V & Vergrösserung & [] \\
+	f & Brennweite & []
+\end{formula}
+
+\subsection{Farbentheorie}
+\includegraphics[width=\columnwidth]{Images/farbentheorie}
+
+
