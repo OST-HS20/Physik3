@@ -30,25 +30,62 @@ Bei einem Spiegel kann das virtuelle Bild durch eine Spiegelung des Bildpunkts u
 
 
 \subsection{Fotoapperat}
-\todo{Woche 4, Freitag 15.10.2021}
+In der Filmebene ergibt sich vom Punkt $G$ kein scharfer Bildpunkt, sondern ein Unscharferkreis mit dem Durchmesser $u$
+\begin{formula}
+	{\frac{1}{g} = \frac{1}{g_0}\pm\frac{u}{qf^2}}
+	D & Dioptrie & \\
+	f & Brennweite & [m]
+\end{formula}
+\begin{center}
+	\includegraphics[width=\columnwidth]{Images/fotoapperat}
+\end{center}
 
+Die Bildweite $b$ ist normalerweise kleiner als die Gegenstandsweite $g$. Dabei ist die Intensität der Lichtstärke $H$ gegeben durch
 \begin{formulaexpanded}
-	{H = \left(\frac{d}{f}\right)^2 = q^2 \qquad Z = \frac{1}{q}}
-	Z & Blendenzahl & [-] \\
+	{B = \frac{f}{g}G \qquad H = \left(\frac{d}{f}\right)^2 = q^2}
+	Z = \frac{1}{q} & Blendenzahl & [1, 1.4, 2...] \\
 	H & Lichtstärke & [] \\
 	f & Brennweite & [] \\
 	d &  & []
 \end{formulaexpanded}
 
+\subsection{Mikroskop}
+\includegraphics[width=\columnwidth]{Images/mikroskop}
+Die Vergrösserung ist gemäss Bild
+\begin{formulaexpanded}
+	{V = \frac{\tan\varepsilon}{\tan\varepsilon_0} = \frac{\frac{B}{f_2}}{\frac{G}{s}}= \frac{B}{G}\frac{s}{f_2}=\frac{b_1}{g_1}\frac{s}{f_2} = \frac{\Delta \cdot s}{f_1f_2}}
+	s & Sehweite & [= ~25cm] 
+\end{formulaexpanded}
+
+
+
 \subsection{Schwingungen}
 \todo{Beispiel mit Feder Prüfung 2019 Aufgabe 2}
 
 \subsection{Pendel}
-\todo{Woche 5}
-\todo{Schwingdauer \[T(a) = 2\pi\sqrt{\frac{J_S + ma^2}{mga}}\]}
+Differentialgleichung aufstellen für Pendel mit Gravitation. $l=87cm$ mit Masse von $930g$, am Ende ist eine quadratische Metallplatte mit Seitenlänge $10cm$ und einer Masse von $1250g$ befestigt. Bei kleiner Auslenkung gilt:
+\begin{center}
+	\includegraphics[width=0.6\columnwidth]{Images/pendel}
+\end{center}
+\textbf{Schwerepunkt} $a$
+\begin{align*}
+	a_y = \frac{m \cdot\frac{l}{2} + M\cdot l}{m+M} = 0.713m
+\end{align*}
+\textbf{Trägheitsmoment} $J$
+\begin{align*}
+	J_S &= \frac{1}{12}ml^2 + \overbrace{m\left(\frac{l}{2}\right)^2}^{\text{S.v.Steiner}} = \frac{1}{3}ml^2 = 0.235kgm^3 \\
+	J_P &= \frac{1}{12}M(D^2 + D^2) + \underbrace{ML^2}_{\text{S.v.Steiner}} = 1.060kgm^3 \\
+	J &= J_S + J_P
+\end{align*}
+Durch einsetzen in die Allgemeine Formel für Pendel $T(a) = 2\pi\sqrt{\frac{J}{mga}}$ ergibt sich $1.83s$
+
 
 \subsection{Radar}
-\todo{Woche 9 Freitag}
-Mithilfe einer Amplitudenmodulation von $f$ und $f'$ wird die Schwebungsfrequenz bestimmt, welche grössenordnung $100Hz$ hat, welche ohne probleme gemessen werden kann.
-\includegraphics[width=\columnwidth]{Images/radar}
+Wenn sich ein Objekt dem Sender mit Frequenz $f_s$ nähert, dann gilt der optische Doppler-Effekt doppelt. Das bedeutet, dass beim Objekt die reflektierte Frequenz \[f' = \frac{\sqrt{1 - \beta^2}}{1 - \beta}\cdot f_s\]wobei $\beta = \frac{u}{c}$, auf die Empfänger-Frequenz $f_e$ angewendet werden muss:
+\begin{align*}
+	f_e &=  \frac{\sqrt{1 - \beta^2}}{1 - \beta} \cdot \underbrace{\frac{\sqrt{1 - \beta^2}}{1 - \beta}\cdot f_s}_{f'} \\
+	 &= \frac{1-\beta^2}{(1-\beta)^2}\cdot f_s \\
+	 &= \frac{1 + \frac{u}{c}}{\frac{u}{c}}
+\end{align*}
+Siehe auch Schwebung im Kapitel \ref{schwebung}
 

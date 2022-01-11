@@ -1,5 +1,5 @@
 \section{Welle}
-Eine Welle ist eine Störung eines Gleichgewichtszustandes, die sich im Raum $x,y,z$ Koordinaten ausbreitet. Es wird\underline{ Energie transportiert, aber kein Material}. Die allgemeine Wellengleichung ist gegeben durch Amlitude $\zeta_o$, der Wellenlänge $k = \frac{2\pi}{\lambda}$ und mittels Wellengeschwindigkeit $u$ ergibt sich $\omega = k \cdot u$, $\varphi$ kann durch einsetzen bestimmt werden \kuchling{231}:
+Eine Welle ist eine Störung eines Gleichgewichtszustandes, die sich im Raum $x,y,z$ Koordinaten ausbreitet. Bei Transversalwellen ist die Störung quer zur Ausbreitungsrichtung, beo Longitudinalwellen parallel. Bei elektromagnetischen Wellen (zB Licht) gibt es ausschliesslich Transversalwellen, Schall hingegen nur Longitudinalwellen. Es wird\underline{ Energie transportiert, aber kein Material}. Die allgemeine Wellengleichung ist gegeben durch Amlitude $\zeta_o$, der Wellenlänge $k = \frac{2\pi}{\lambda}$ und mittels Wellengeschwindigkeit $u$ ergibt sich $\omega = k \cdot u$, $\varphi$ kann durch einsetzen bestimmt werden \kuchling{231}:
                   
 \[
 \zeta(x, t) = \zeta_o\sin(\omega t - kx)
@@ -21,7 +21,7 @@ Eine Welle ist eine Störung eines Gleichgewichtszustandes, die sich im Raum $x,
 \end{formula}   
 
 \subsection{Wellengeschwindigkeit}
-\textbf{Festkörper:}
+\textbf{Festkörper} (Longitudinal oder Transversal):
 \begin{formulaexpanded}
 	{u_1 = \sqrt{\frac{E}{\rho}} \qquad u_2 = \sqrt{\frac{G}{\rho}} \qquad u_3 =\sqrt{\frac{F}{\rho A}} }
 	u_1 & Elastische Longitudenwelle & [m/s] \\
@@ -60,7 +60,7 @@ Für bewegter Beobachter und bewegte Quelle:\\
 	u & Schallgeschw. & [m/s]
 \end{formula}    
 ~\\ ~\\
-Für bewegter Quelle mit Winkel. Ohne Winkel $\cos(0) = 1$:\\
+Für bewegter Quelle mit Winkel. Ohne Winkel $\cos(0) = 1$. Wenn Distanz von Q und B kleiner wird $-$, bei grösserwerdender Distanz $+$:\\
 \includegraphics[width=0.4\columnwidth]{Images/dopplereffekt1}
 \begin{formula}
 	{f_B = \frac{1}{1\mp\frac{v_Q}{u}\cos(\alpha_Q)}f_Q}
@@ -79,9 +79,21 @@ Es spielt nur die relative Bewegung von Beobachter und Quelle eine Rolle\\
 	u & Schallgeschw. & [m/s] \\
 	c & Lichtgeschw. & [m/s]
 \end{formula}    
-
-
 Siehe auch Mach'sche Kegel \kuchling{344} für Überschallgeschwindigkeit.
+
+\subsection{Schwebung}\label{schwebung}
+Um zB eine Frequenz in GHz zu messen, wird die Schwebung $f_s$ mithilfe einer Amplitudenmodulation $y$ gebildet. Diese Schwebung kann einfacher gemessen und ausgewertet werden.
+\begin{center}
+	\includegraphics[width=0.7\columnwidth]{Images/schwebung}
+\end{center}
+
+\begin{align*}
+	y &= A[\sin(2\pi f_1 t) + \sin(2\pi f_2 t)] \\
+	&= 2A\cdot\sin\left(\underbrace{\frac{\omega_1 + \omega_2}{2}}_{\overline{\omega}}t\right)\cdot \cos\left(\underbrace{\frac{\omega_1 - \omega_2}{2}}_{\hat{\omega}}t\right) \\
+	\\
+	f_s &= f_1 - f_2 = \frac{\omega_1 - \omega_2}{2\pi}
+\end{align*}
+
 \subsection{Wellenimpdanz}
 \noindent Die \textbf{Wellenimpedanz} $Z$ ist gegeben durch
 \begin{formulaexpanded}
