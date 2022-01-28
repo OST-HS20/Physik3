@@ -15,10 +15,15 @@ Die Eigenfrequenz kann durch \textbf{Lösen einer DGL }(Siehe \ref{DGL}) gefunde
 	\delta & Ablingkonstante &
 \end{formula}
 
-\noindent Die \textbf{Ablingkonstante} kann bestimmt werden durch Messen einer Schwingung $f(x) = \sin(2\pi f x)\cdot e^{-\delta x}$ von zwei aufeinanderfolgenden Amplituden $\max A, B$ und der Periode $T$. Wobei \[\Lambda = \underbrace{\ln\left(\frac{y(A)}{y(B)}\right)}_\delta \cdot \frac{1}{T}\]
+\noindent Die \textbf{Ablingkonstante} $\delta$ kann bestimmt werden durch Messen einer Schwingung $f(x) = \sin(2\pi f x)\cdot e^{-\delta x}$ von zwei aufeinanderfolgenden Amplituden $\max A, B$ und der Periode $T$. Wobei $\Lambda$ eine log. Dämpfungsfaktor abhängig von der Periode ist.  \[\Lambda = \underbrace{\ln\left(\frac{y(A)}{y(B)}\right)}_\delta \cdot T\]
 \begin{center}
 	\includegraphics[width=0.8\columnwidth]{Images/ablingkonstante}
 \end{center}
+	
+\noindent\textbf{Beispiel} $\Lambda = 0.107$ mit erste Amplitude $A_0 = 3.074cm$ Dann ist die fünfte Amplitude $A_5$:
+\[
+\ln\left(\frac{A_0}{A_5}\right) = 5 \Lambda \xRightarrow[]{} A_5 = A_0\cdot e^{-5\Lambda} = 1.8cm
+\]
 	
 \begin{formula}
 	{\omega_d = \sqrt{\omega_0^2 - \delta^2}}
