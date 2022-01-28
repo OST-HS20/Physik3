@@ -1,5 +1,5 @@
 \section{Welle}
-Eine Welle ist eine Störung eines Gleichgewichtszustandes, die sich im Raum $x,y,z$ Koordinaten ausbreitet. Bei Transversalwellen ist die Störung quer zur Ausbreitungsrichtung, beo Longitudinalwellen parallel. Bei elektromagnetischen Wellen (zB Licht) gibt es ausschliesslich Transversalwellen, Schall hingegen nur Longitudinalwellen. Es wird\underline{ Energie transportiert, aber kein Material}. Die allgemeine Wellengleichung ist gegeben durch Amlitude $\zeta_o$, der Wellenlänge $k = \frac{2\pi}{\lambda}$ und mittels Wellengeschwindigkeit $u$ ergibt sich $\omega = k \cdot u$, $\varphi$ kann durch einsetzen bestimmt werden \kuchling{231}:
+Eine Welle ist eine Störung eines Gleichgewichtszustandes, die sich im Raum $x,y,z$ Koordinaten ausbreitet. Bei Transversalwellen ist die Störung quer zur Ausbreitungsrichtung, bei Longitudinalwellen parallel. Bei elektromagnetischen Wellen (zB Licht) gibt es ausschliesslich Transversalwellen, Schall hingegen nur Longitudinalwellen. Es wird\underline{ Energie transportiert, aber kein Material}. Die allgemeine Wellengleichung ist gegeben durch Amlitude $\zeta_o$, der Wellenlänge $k = \frac{2\pi}{\lambda}$ und mittels Wellengeschwindigkeit $u$ ergibt sich $\omega = k \cdot u$, $\varphi$ kann durch einsetzen bestimmt werden \kuchling{231}:
                   
 \[
 \zeta(x, t) = \zeta_o\sin(\omega t - kx)
@@ -11,16 +11,17 @@ Eine Welle ist eine Störung eines Gleichgewichtszustandes, die sich im Raum $x,
 
 \subsection{Harmonische Welle}
 \includegraphics[width=\columnwidth]{Images/harm.welle}
-\begin{formula}
+\begin{formulaexpanded}
 	{k = \frac{\omega}{u} = \frac{2\pi}{\lambda} \quad \omega = 2\pi f = \frac{2\pi}{T}}
 	k & Faktor & [] \\
 	u & Lichtgeschw. & [m/s] \\
 	\lambda & Wellenlänge & [m/s] \\
 	\omega & Kreisgeschw. & [m/s] \\
-	T & Periodendauer & []
-\end{formula}   
+	T & Periodendauer & [s]\\
+	f & Frequenz & [Hz/s^{-1}]
+\end{formulaexpanded}   
 
-\subsection{Wellengeschwindigkeit}
+\subsection{Wellengeschwindigkeit}\label{wgeschw}
 \textbf{Festkörper} (Longitudinal oder Transversal):
 \begin{formulaexpanded}
 	{u_1 = \sqrt{\frac{E}{\rho}} \qquad u_2 = \sqrt{\frac{G}{\rho}} \qquad u_3 =\sqrt{\frac{F}{\rho A}} }
@@ -62,29 +63,29 @@ Für bewegter Beobachter und bewegte Quelle:\\
 ~\\ ~\\
 Für bewegter Quelle mit Winkel. Ohne Winkel $\cos(0) = 1$. Wenn Distanz von Q und B kleiner wird $-$, bei grösserwerdender Distanz $+$:\\
 \includegraphics[width=0.4\columnwidth]{Images/dopplereffekt1}
-\begin{formula}
+\begin{formulaexpanded}
 	{f_B = \frac{1}{1\mp\frac{v_Q}{u}\cos(\alpha_Q)}f_Q}
 	x_B & Beobachter & [] \\
 	x_Q & Quelle & [] \\
 	u & Schallgeschw. & [m/s]
-\end{formula}    
+\end{formulaexpanded}    
 
 
 \subsubsection{Optisch}
 Es spielt nur die relative Bewegung von Beobachter und Quelle eine Rolle\\
-\begin{formula}
+\begin{formulaexpanded}
 	{f_B = \frac{\sqrt{1-\beta^2}}{1-\beta\cos(\alpha)}f_Q \qquad \beta = \frac{v}{c}} 
 	x_B & Beobachter & [] \\
 	x_Q & Quelle & [] \\
 	u & Schallgeschw. & [m/s] \\
 	c & Lichtgeschw. & [m/s]
-\end{formula}    
+\end{formulaexpanded}    
 Siehe auch Mach'sche Kegel \kuchling{344} für Überschallgeschwindigkeit.
 
 \subsection{Schwebung}\label{schwebung}
 Um zB eine Frequenz in GHz zu messen, wird die Schwebung $f_s$ mithilfe einer Amplitudenmodulation $y$ gebildet. Diese Schwebung kann einfacher gemessen und ausgewertet werden.
 \begin{center}
-	\includegraphics[width=0.7\columnwidth]{Images/schwebung}
+	\includegraphics[width=\columnwidth]{Images/schwebung}
 \end{center}
 
 \begin{align*}
@@ -165,8 +166,9 @@ Zwei Wellen die gleichzeitig in entgegengesetzter Richtung durch das gleich Medi
 	{f_n = n\cdot\frac{u}{2L} \qquad \lambda_n = \frac{2L}{n}} 
 	f_n & Frequenz & \\
 	n & Anz. Harmonische Freq. & \\
-	u & & \\
+	u & Wellengeschwindigkeit (Siehe Kap. \ref{wgeschw})& \\
 	L & Länge & \\
+	\lambda & Wellenlänge & [] \\
 \end{formulaexpanded} 
 Die Anzahl der harmonischen Frequenzen $n$ kann die Anzahl der Schwingungsknoten $k = n -1$ ermittelen.
 \begin{center}

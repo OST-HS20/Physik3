@@ -58,9 +58,22 @@ Die Vergrösserung ist gemäss Bild
 \end{formulaexpanded}
 
 
-
 \subsection{Schwingungen}
-\todo{Beispiel mit Feder Prüfung 2019 Aufgabe 2}
+Hantel mit $m=20kg$ besteht aus 2 Kugeln mit je $r_1 = 13.5cm$ Durchmesser. Die Verbindungsstange ist $l=25cm$ mit $m=5kg$. Die Hantel wird im Schwerpunkt aufgehängt und in Drehschwigung gesetzt. Schwingdauer ist $T_1 = 2s$. Welche Schwingdauer hat eine Hantel mit total $25kg$ und je $r2= 15.5cm$ Kugeln.
+\begin{center}
+	\includegraphics[width=0.4\columnwidth]{Images/schwingung}
+\end{center}
+\begin{align*}
+	J_{S} &= \frac{1}{12}ml^2 = 0.026kgm^2 \\
+	J_{K} &= \frac{2}{5}mR^2 \xrightarrow{} J_{K1} = 0.0137kgm^2, J_{K2} = 0.024kgm^2 \\
+	J_{Hn} &= J_{S} + 2\left(J_{Kn} + m_{Kn}\left(\frac{l}{2}+r_{Kn}\right)^2\right) \\
+	& \xrightarrow{} J_{H1} = 0.609kgm^2, J_{H2} = 0.894kgm^2
+\end{align*}
+Dadurch lässt sich ein Verhältniss der zwei Experimente bilden
+\begin{align*}
+	T &= 2\pi \sqrt{\frac{J}{c}} \xrightarrow{} \frac{T_1}{T_2} = \sqrt{\frac{J_1}{J_2}}\\
+	\xRightarrow[]{} T_2 &= T_1 \cdot \frac{J_2}{J_1} = 2.42s
+\end{align*}
 
 \subsection{Pendel}
 Differentialgleichung aufstellen für Pendel mit Gravitation. $l=87cm$ mit Masse von $930g$, am Ende ist eine quadratische Metallplatte mit Seitenlänge $10cm$ und einer Masse von $1250g$ befestigt. Bei kleiner Auslenkung gilt:
@@ -85,7 +98,22 @@ Wenn sich ein Objekt dem Sender mit Frequenz $f_s$ nähert, dann gilt der optisc
 \begin{align*}
 	f_e &=  \frac{\sqrt{1 - \beta^2}}{1 - \beta} \cdot \underbrace{\frac{\sqrt{1 - \beta^2}}{1 - \beta}\cdot f_s}_{f'} \\
 	 &= \frac{1-\beta^2}{(1-\beta)^2}\cdot f_s \\
-	 &= \frac{1 + \frac{u}{c}}{\frac{u}{c}}
+	 &= \frac{1 + \frac{u}{c}}{1- \frac{u}{c}}
 \end{align*}
 Siehe auch Schwebung im Kapitel \ref{schwebung}
 
+\subsection{Interferenz}
+Zwei Lautsprecher sind im Abstand von $s=80cm$ aufgestellt und spielen einen Sinus Ton unterhalb von $500Hz$ ab. Im Abstand von $R=4.8m$ mit Mittelpunkt zwischen den Lautsprechner, wird der Ton bei $30^\circ$ zur Verbindungslinie am leisesten. Temperatur ist $20^\circ C$.
+\begin{center}
+	\includegraphics[width=0.6\columnwidth]{Images/interferenz}
+\end{center}
+\begin{align*}
+	u = \sqrt{\frac{\chi R T}{M_{Luft}}} = \sqrt{\frac{1.4\cdot 8.314 \cdot (273 + 20)}{0.0288}} = 344\frac{m}{s}
+\end{align*}
+Ein Auslöschung findet bei $\Delta r = r_2 - r_1 = \frac{\lambda}{2}(2n + 1)$ mit $n \in \mathbb{N^+}$ statt. Mittels Cosinus-Satz (Achtung 2 Lösungen!) und $\lambda = \frac{u}{f}$ kann folgende Formel gefunden werden
+\begin{align*}
+	r_1^2 &= R^2 + \left(\frac{s}{2}\right)^2 - 2R\frac{s}{2}\cos(30) \quad r_2^2 = R^2 + \left(\frac{s}{2}\right)^2 + 2R\frac{s}{2}\cos(150) 	\\
+	\Delta r &= r_2 - r_1 = 0.692m \\
+	\Delta r &= \frac{\lambda}{2}(2n + 1) \xRightarrow[]{\lambda = \frac{u}{f}}f = \frac{u}{2\Delta r}(2n +1) \\
+	&\xrightarrow{} n=0: f_1 = 249Hz, \quad n=1: f_2 = 746Hz (\text{keine Lösung})
+\end{align*}
